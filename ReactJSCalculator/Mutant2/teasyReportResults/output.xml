@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.6.9 on linux)" generated="20200708 10:24:02.047" rpa="false">
+<suite id="s1" name="Tests" source="/home/yuryalencar/Documentos/teasyMutator/TeasyValidation/ReactJSCalculator/TeasyTests/tests">
+<suite id="s1-s1" name="CalculationTests.tests" source="/home/yuryalencar/Documentos/teasyMutator/TeasyValidation/ReactJSCalculator/TeasyTests/tests/CalculationTests.tests.robot">
+<test id="s1-s1-t1" name="Somar 3 + 3">
+<kw name="Start Test" library="hooks.pages.commons" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost:3000/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200708 10:24:02.214" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20200708 10:24:02.214" endtime="20200708 10:24:04.807"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1080</arg>
+<arg>720</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:04.808" endtime="20200708 10:24:04.929"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:04.929" endtime="20200708 10:24:04.932"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:02.213" endtime="20200708 10:24:04.932"></status>
+</kw>
+<kw name="Click Button 3" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_3}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:04.934" level="INFO">Clicking element 'id:3'.</msg>
+<status status="PASS" starttime="20200708 10:24:04.934" endtime="20200708 10:24:04.994"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:04.933" endtime="20200708 10:24:04.994"></status>
+</kw>
+<kw name="Click Button Plus" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_PLUS}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:04.995" level="INFO">Clicking element 'id:+'.</msg>
+<status status="PASS" starttime="20200708 10:24:04.995" endtime="20200708 10:24:05.060"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:04.995" endtime="20200708 10:24:05.060"></status>
+</kw>
+<kw name="Click Button 3" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_3}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:05.061" level="INFO">Clicking element 'id:3'.</msg>
+<status status="PASS" starttime="20200708 10:24:05.061" endtime="20200708 10:24:05.122"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:05.061" endtime="20200708 10:24:05.122"></status>
+</kw>
+<kw name="Click Button Equal" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_EQUAL}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:05.123" level="INFO">Clicking element 'id:='.</msg>
+<status status="PASS" starttime="20200708 10:24:05.123" endtime="20200708 10:24:05.186"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:05.122" endtime="20200708 10:24:05.186"></status>
+</kw>
+<kw name="Verify Display 6" library="CalculatorHome.pages">
+<kw name="Wait For Condition" library="SeleniumLibrary">
+<doc>Waits until ``condition`` is true or ``timeout`` expires.</doc>
+<arguments>
+<arg>return document.getElementsByClassName('display')[0].innerText === '6'</arg>
+<arg>timeout=3</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:05.187" endtime="20200708 10:24:05.203"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:05.187" endtime="20200708 10:24:05.204"></status>
+</kw>
+<kw name="Finish Test" library="hooks.pages.commons" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200708 10:24:05.460" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200708 10:24:05.206" endtime="20200708 10:24:05.460"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200708 10:24:05.460" endtime="20200708 10:24:05.531"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:05.206" endtime="20200708 10:24:05.531"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:02.212" endtime="20200708 10:24:05.532" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Subtrair 3 - 3">
+<kw name="Start Test" library="hooks.pages.commons" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost:3000/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200708 10:24:05.538" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20200708 10:24:05.537" endtime="20200708 10:24:08.198"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1080</arg>
+<arg>720</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:08.199" endtime="20200708 10:24:08.317"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:08.318" endtime="20200708 10:24:08.321"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:05.537" endtime="20200708 10:24:08.322"></status>
+</kw>
+<kw name="Click Button 3" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_3}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:08.325" level="INFO">Clicking element 'id:3'.</msg>
+<status status="PASS" starttime="20200708 10:24:08.324" endtime="20200708 10:24:08.381"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:08.323" endtime="20200708 10:24:08.381"></status>
+</kw>
+<kw name="Click Button Sub" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_SUB}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:08.382" level="INFO">Clicking element 'id:-'.</msg>
+<status status="PASS" starttime="20200708 10:24:08.382" endtime="20200708 10:24:08.443"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:08.381" endtime="20200708 10:24:08.443"></status>
+</kw>
+<kw name="Click Button 3" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_3}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:08.444" level="INFO">Clicking element 'id:3'.</msg>
+<status status="PASS" starttime="20200708 10:24:08.444" endtime="20200708 10:24:08.490"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:08.443" endtime="20200708 10:24:08.490"></status>
+</kw>
+<kw name="Click Button Equal" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_EQUAL}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:08.491" level="INFO">Clicking element 'id:='.</msg>
+<status status="PASS" starttime="20200708 10:24:08.491" endtime="20200708 10:24:08.552"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:08.490" endtime="20200708 10:24:08.553"></status>
+</kw>
+<kw name="Verify Display 0" library="CalculatorHome.pages">
+<kw name="Wait For Condition" library="SeleniumLibrary">
+<doc>Waits until ``condition`` is true or ``timeout`` expires.</doc>
+<arguments>
+<arg>return document.getElementsByClassName('display')[0].innerText === '0'</arg>
+<arg>timeout=3</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:08.553" endtime="20200708 10:24:08.560"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:08.553" endtime="20200708 10:24:08.561"></status>
+</kw>
+<kw name="Finish Test" library="hooks.pages.commons" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200708 10:24:08.827" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200708 10:24:08.561" endtime="20200708 10:24:08.827"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200708 10:24:08.827" endtime="20200708 10:24:08.888"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:08.561" endtime="20200708 10:24:08.888"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:05.536" endtime="20200708 10:24:08.888" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="Somar 0.5 + 4.4">
+<kw name="Start Test" library="hooks.pages.commons" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost:3000/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200708 10:24:08.893" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20200708 10:24:08.892" endtime="20200708 10:24:11.422"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1080</arg>
+<arg>720</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:11.423" endtime="20200708 10:24:11.533"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:11.533" endtime="20200708 10:24:11.534"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:08.891" endtime="20200708 10:24:11.534"></status>
+</kw>
+<kw name="Click Button 0" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_0}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:11.535" level="INFO">Clicking element 'id:0'.</msg>
+<status status="PASS" starttime="20200708 10:24:11.535" endtime="20200708 10:24:11.594"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:11.535" endtime="20200708 10:24:11.595"></status>
+</kw>
+<kw name="Click Button Point" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_POINT}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:11.596" level="INFO">Clicking element 'id:.'.</msg>
+<status status="PASS" starttime="20200708 10:24:11.595" endtime="20200708 10:24:11.658"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:11.595" endtime="20200708 10:24:11.658"></status>
+</kw>
+<kw name="Click Button 5" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_5}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:11.659" level="INFO">Clicking element 'id:5'.</msg>
+<status status="PASS" starttime="20200708 10:24:11.659" endtime="20200708 10:24:11.726"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:11.658" endtime="20200708 10:24:11.726"></status>
+</kw>
+<kw name="Click Button Plus" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_PLUS}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:11.727" level="INFO">Clicking element 'id:+'.</msg>
+<status status="PASS" starttime="20200708 10:24:11.727" endtime="20200708 10:24:11.786"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:11.727" endtime="20200708 10:24:11.787"></status>
+</kw>
+<kw name="Click Button 4" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_4}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:11.788" level="INFO">Clicking element 'id:4'.</msg>
+<status status="PASS" starttime="20200708 10:24:11.787" endtime="20200708 10:24:11.855"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:11.787" endtime="20200708 10:24:11.855"></status>
+</kw>
+<kw name="Click Button Point" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_POINT}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:11.857" level="INFO">Clicking element 'id:.'.</msg>
+<status status="PASS" starttime="20200708 10:24:11.856" endtime="20200708 10:24:11.900"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:11.856" endtime="20200708 10:24:11.901"></status>
+</kw>
+<kw name="Click Button 4" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_4}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:11.905" level="INFO">Clicking element 'id:4'.</msg>
+<status status="PASS" starttime="20200708 10:24:11.903" endtime="20200708 10:24:11.956"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:11.903" endtime="20200708 10:24:11.956"></status>
+</kw>
+<kw name="Click Button Equal" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_EQUAL}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:11.957" level="INFO">Clicking element 'id:='.</msg>
+<status status="PASS" starttime="20200708 10:24:11.957" endtime="20200708 10:24:12.020"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:11.956" endtime="20200708 10:24:12.021"></status>
+</kw>
+<kw name="Verify Display 4.9" library="CalculatorHome.pages">
+<kw name="Wait For Condition" library="SeleniumLibrary">
+<doc>Waits until ``condition`` is true or ``timeout`` expires.</doc>
+<arguments>
+<arg>return document.getElementsByClassName('display')[0].innerText === '4.9'</arg>
+<arg>timeout=3</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:12.022" endtime="20200708 10:24:12.036"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:12.021" endtime="20200708 10:24:12.036"></status>
+</kw>
+<kw name="Finish Test" library="hooks.pages.commons" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200708 10:24:12.279" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200708 10:24:12.039" endtime="20200708 10:24:12.279"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200708 10:24:12.280" endtime="20200708 10:24:12.343"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:12.037" endtime="20200708 10:24:12.343"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:08.890" endtime="20200708 10:24:12.343" critical="yes"></status>
+</test>
+<test id="s1-s1-t4" name="Multiplicar 2 * 400">
+<kw name="Start Test" library="hooks.pages.commons" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost:3000/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200708 10:24:12.351" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20200708 10:24:12.350" endtime="20200708 10:24:14.729"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1080</arg>
+<arg>720</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:14.730" endtime="20200708 10:24:14.843"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:14.844" endtime="20200708 10:24:14.847"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:12.348" endtime="20200708 10:24:14.847"></status>
+</kw>
+<kw name="Click Button 2" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_2}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:14.850" level="INFO">Clicking element 'id:2'.</msg>
+<status status="PASS" starttime="20200708 10:24:14.849" endtime="20200708 10:24:14.920"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:14.848" endtime="20200708 10:24:14.922"></status>
+</kw>
+<kw name="Click Button Multiplier" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_MULTIPLIER}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:14.924" level="INFO">Clicking element 'id:*'.</msg>
+<status status="PASS" starttime="20200708 10:24:14.923" endtime="20200708 10:24:14.976"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:14.922" endtime="20200708 10:24:14.976"></status>
+</kw>
+<kw name="Click Button 4" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_4}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:14.977" level="INFO">Clicking element 'id:4'.</msg>
+<status status="PASS" starttime="20200708 10:24:14.977" endtime="20200708 10:24:15.036"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:14.976" endtime="20200708 10:24:15.036"></status>
+</kw>
+<kw name="Click Button 0" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_0}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:15.041" level="INFO">Clicking element 'id:0'.</msg>
+<status status="PASS" starttime="20200708 10:24:15.039" endtime="20200708 10:24:15.093"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:15.038" endtime="20200708 10:24:15.093"></status>
+</kw>
+<kw name="Click Button 0" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_0}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:15.094" level="INFO">Clicking element 'id:0'.</msg>
+<status status="PASS" starttime="20200708 10:24:15.094" endtime="20200708 10:24:15.157"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:15.093" endtime="20200708 10:24:15.158"></status>
+</kw>
+<kw name="Click Button Equal" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_EQUAL}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:15.160" level="INFO">Clicking element 'id:='.</msg>
+<status status="PASS" starttime="20200708 10:24:15.159" endtime="20200708 10:24:15.220"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:15.158" endtime="20200708 10:24:15.220"></status>
+</kw>
+<kw name="Verify Display 800" library="CalculatorHome.pages">
+<kw name="Wait For Condition" library="SeleniumLibrary">
+<doc>Waits until ``condition`` is true or ``timeout`` expires.</doc>
+<arguments>
+<arg>return document.getElementsByClassName('display')[0].innerText === '800'</arg>
+<arg>timeout=3</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:15.221" endtime="20200708 10:24:15.236"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:15.221" endtime="20200708 10:24:15.236"></status>
+</kw>
+<kw name="Finish Test" library="hooks.pages.commons" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200708 10:24:15.498" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200708 10:24:15.239" endtime="20200708 10:24:15.498"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200708 10:24:15.498" endtime="20200708 10:24:15.559"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:15.238" endtime="20200708 10:24:15.560"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:12.344" endtime="20200708 10:24:15.560" critical="yes"></status>
+</test>
+<test id="s1-s1-t5" name="Dividir 400 / 2">
+<kw name="Start Test" library="hooks.pages.commons" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost:3000/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200708 10:24:15.572" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20200708 10:24:15.570" endtime="20200708 10:24:18.275"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1080</arg>
+<arg>720</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:18.276" endtime="20200708 10:24:18.395"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:18.396" endtime="20200708 10:24:18.397"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:15.566" endtime="20200708 10:24:18.397"></status>
+</kw>
+<kw name="Click Button 4" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_4}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:18.398" level="INFO">Clicking element 'id:4'.</msg>
+<status status="PASS" starttime="20200708 10:24:18.398" endtime="20200708 10:24:18.456"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:18.398" endtime="20200708 10:24:18.458"></status>
+</kw>
+<kw name="Click Button 0" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_0}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:18.460" level="INFO">Clicking element 'id:0'.</msg>
+<status status="PASS" starttime="20200708 10:24:18.459" endtime="20200708 10:24:18.524"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:18.458" endtime="20200708 10:24:18.524"></status>
+</kw>
+<kw name="Click Button 0" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_0}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:18.525" level="INFO">Clicking element 'id:0'.</msg>
+<status status="PASS" starttime="20200708 10:24:18.525" endtime="20200708 10:24:18.570"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:18.525" endtime="20200708 10:24:18.571"></status>
+</kw>
+<kw name="Click Button Divider" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_DIVIDER}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:18.575" level="INFO">Clicking element 'id:/'.</msg>
+<status status="PASS" starttime="20200708 10:24:18.573" endtime="20200708 10:24:18.641"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:18.571" endtime="20200708 10:24:18.641"></status>
+</kw>
+<kw name="Click Button 2" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_2}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:18.642" level="INFO">Clicking element 'id:2'.</msg>
+<status status="PASS" starttime="20200708 10:24:18.642" endtime="20200708 10:24:18.705"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:18.642" endtime="20200708 10:24:18.705"></status>
+</kw>
+<kw name="Click Button Equal" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_EQUAL}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:18.706" level="INFO">Clicking element 'id:='.</msg>
+<status status="PASS" starttime="20200708 10:24:18.706" endtime="20200708 10:24:18.769"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:18.705" endtime="20200708 10:24:18.769"></status>
+</kw>
+<kw name="Verify Display 200" library="CalculatorHome.pages">
+<kw name="Wait For Condition" library="SeleniumLibrary">
+<doc>Waits until ``condition`` is true or ``timeout`` expires.</doc>
+<arguments>
+<arg>return document.getElementsByClassName('display')[0].innerText === '200'</arg>
+<arg>timeout=3</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:18.770" endtime="20200708 10:24:18.778"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:18.770" endtime="20200708 10:24:18.778"></status>
+</kw>
+<kw name="Finish Test" library="hooks.pages.commons" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200708 10:24:19.082" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200708 10:24:18.781" endtime="20200708 10:24:19.082"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200708 10:24:19.082" endtime="20200708 10:24:19.166"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:18.779" endtime="20200708 10:24:19.166"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:15.564" endtime="20200708 10:24:19.167" critical="yes"></status>
+</test>
+<test id="s1-s1-t6" name="Clear Calcs">
+<kw name="Start Test" library="hooks.pages.commons" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost:3000/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200708 10:24:19.171" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20200708 10:24:19.171" endtime="20200708 10:24:21.887"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1080</arg>
+<arg>720</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:21.888" endtime="20200708 10:24:22.003"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200708 10:24:22.003" endtime="20200708 10:24:22.005"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:19.170" endtime="20200708 10:24:22.005"></status>
+</kw>
+<kw name="Click Button 4" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_4}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:22.006" level="INFO">Clicking element 'id:4'.</msg>
+<status status="PASS" starttime="20200708 10:24:22.005" endtime="20200708 10:24:22.061"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:22.005" endtime="20200708 10:24:22.062"></status>
+</kw>
+<kw name="Click Button 0" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_0}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:22.062" level="INFO">Clicking element 'id:0'.</msg>
+<status status="PASS" starttime="20200708 10:24:22.062" endtime="20200708 10:24:22.127"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:22.062" endtime="20200708 10:24:22.127"></status>
+</kw>
+<kw name="Click Button 0" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_0}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:22.128" level="INFO">Clicking element 'id:0'.</msg>
+<status status="PASS" starttime="20200708 10:24:22.128" endtime="20200708 10:24:22.188"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:22.127" endtime="20200708 10:24:22.188"></status>
+</kw>
+<kw name="Click Button Divider" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_DIVIDER}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:22.190" level="INFO">Clicking element 'id:/'.</msg>
+<status status="PASS" starttime="20200708 10:24:22.190" endtime="20200708 10:24:22.254"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:22.189" endtime="20200708 10:24:22.254"></status>
+</kw>
+<kw name="Click Button 2" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_2}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:22.256" level="INFO">Clicking element 'id:2'.</msg>
+<status status="PASS" starttime="20200708 10:24:22.255" endtime="20200708 10:24:22.322"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:22.255" endtime="20200708 10:24:22.322"></status>
+</kw>
+<kw name="Click Button Equal" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_EQUAL}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:22.324" level="INFO">Clicking element 'id:='.</msg>
+<status status="PASS" starttime="20200708 10:24:22.323" endtime="20200708 10:24:22.387"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:22.323" endtime="20200708 10:24:22.387"></status>
+</kw>
+<kw name="Click Button AC" library="CalculatorHome.pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${AC_BUTTON}</arg>
+</arguments>
+<msg timestamp="20200708 10:24:22.388" level="INFO">Clicking element 'id:AC'.</msg>
+<status status="PASS" starttime="20200708 10:24:22.388" endtime="20200708 10:24:22.454"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:22.387" endtime="20200708 10:24:22.454"></status>
+</kw>
+<kw name="Verify Display 0" library="CalculatorHome.pages">
+<kw name="Wait For Condition" library="SeleniumLibrary">
+<doc>Waits until ``condition`` is true or ``timeout`` expires.</doc>
+<arguments>
+<arg>return document.getElementsByClassName('display')[0].innerText === '0'</arg>
+<arg>timeout=3</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200708 10:24:25.817" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200708 10:24:25.584" endtime="20200708 10:24:25.817"></status>
+</kw>
+<msg timestamp="20200708 10:24:25.818" level="FAIL">Condition 'return document.getElementsByClassName('display')[0].innerText === '0'' did not become true in 3 seconds.</msg>
+<status status="FAIL" starttime="20200708 10:24:22.455" endtime="20200708 10:24:25.818"></status>
+</kw>
+<status status="FAIL" starttime="20200708 10:24:22.455" endtime="20200708 10:24:25.818"></status>
+</kw>
+<kw name="Finish Test" library="hooks.pages.commons" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200708 10:24:26.059" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200708 10:24:25.819" endtime="20200708 10:24:26.059"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200708 10:24:26.059" endtime="20200708 10:24:26.126"></status>
+</kw>
+<status status="PASS" starttime="20200708 10:24:25.819" endtime="20200708 10:24:26.126"></status>
+</kw>
+<status status="FAIL" starttime="20200708 10:24:19.169" endtime="20200708 10:24:26.126" critical="yes">Condition 'return document.getElementsByClassName('display')[0].innerText === '0'' did not become true in 3 seconds.</status>
+</test>
+<doc>Tests for respective flows
+
+Executable tests presents in this file.</doc>
+<status status="FAIL" starttime="20200708 10:24:02.071" endtime="20200708 10:24:26.132"></status>
+</suite>
+<status status="FAIL" starttime="20200708 10:24:02.049" endtime="20200708 10:24:26.152"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1">Critical Tests</stat>
+<stat pass="5" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="1" id="s1" name="Tests">Tests</stat>
+<stat pass="5" fail="1" id="s1-s1" name="CalculationTests.tests">Tests.CalculationTests.tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
